@@ -1,0 +1,20 @@
+rows: 3
+title: '&8ᴄᴏɴғɪʀᴍ ᴘᴜʀᴄʜᴀsᴇ'
+confirm-purchase: {slot: 23, material: LIME_STAINED_GLASS_PANE, displayname: '&#0bf52bᴄᴏɴꜰɪʀᴍ', lore: ['&fClick to buy']}
+decline-purchase: {slot: 21, material: RED_STAINED_GLASS_PANE, displayname: '&#f5240bʙᴀᴄᴋ', lore: ['&fClick to cancel']}
+item-purchase: {slot: 13, lore: ['&fAmount: &#0bf52b%amount%', '&fBuy Price: &#0bf52b%price%']}
+no-amount-items: [TOTEM_OF_UNDYING, POTION, SPLASH_POTION, ENCHANTED_BOOK, SHULKER_BOX, ELYTRA, BOW, CROSSBOW, FISHING_ROD, IRON_SWORD, DIAMOND_SWORD, STONE_PICKAXE, IRON_PICKAXE, DIAMOND_PICKAXE, SHIELD]
+if-64max:
+  add1: {slot: 15, amount: 1, displayname: '&#0bf52bAdd 1', material: LIME_STAINED_GLASS_PANE, lore: ['&fClick to add']}
+  add10: {slot: 16, amount: 10, displayname: '&#0bf52bAdd 10', material: LIME_STAINED_GLASS_PANE, lore: ['&fClick to add']}
+  setto64: {slot: 17, amount: 64, displayname: '&#0bf52bSet to 64', material: LIME_STAINED_GLASS_PANE, lore: ['&fClick to set']}
+  remove64: {slot: 9, amount: 64, displayname: '&#f5240bRemove 64', material: RED_STAINED_GLASS_PANE, lore: ['&fClick to remove']}
+  remove10: {slot: 10, amount: 10, displayname: '&#f5240bRemove 10', material: RED_STAINED_GLASS_PANE, lore: ['&fClick to remove']}
+  remove1: {slot: 11, amount: 1, displayname: '&#f5240bRemove 1', material: RED_STAINED_GLASS_PANE, lore: ['&fClick to remove']}
+if-16max:
+  add1: {slot: 15, amount: 1, displayname: '&#0bf52bAdd 1', material: LIME_STAINED_GLASS_PANE, lore: ['&fClick to add']}
+  add10: {slot: 16, amount: 10, displayname: '&#0bf52bAdd 10', material: LIME_STAINED_GLASS_PANE, lore: ['&fClick to add']}
+  setto16: {slot: 17, amount: 16, displayname: '&#0bf52bSet to 16', material: LIME_STAINED_GLASS_PANE, lore: ['&fClick to set']}
+  remove16: {slot: 9, amount: 16, displayname: '&#f5240bRemove 16', material: RED_STAINED_GLASS_PANE, lore: ['&fClick to remove']}
+  remove10: {slot: 10, amount: 10, displayname: '&#f5240bRemove 10', material: RED_STAINED_GLASS_PANE, lore: ['&fClick to remove']}
+  remove1: {slot: 11, amount: 1, displayname: '&#f5240bRemove 1', material: RED_STAINED_GLASS_PANE, lore: ['&fClick to remove']}

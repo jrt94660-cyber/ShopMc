@@ -24,5 +24,5 @@ items:
   white-wool: {slot: 16, material: WHITE_WOOL, displayname: '&fWhite Wool', price: 40, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
   red-wool: {slot: 17, material: RED_WOOL, displayname: '&fRed Wool', price: 40, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
   smooth-stone: {slot: 18, material: SMOOTH_STONE, displayname: '&fSmooth Stone', price: 12, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
-  polished-andesite: {slot: 19, material: POLISHED_ANDESITE, displayname: '&fPolished Andesite', price: 18, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%'}
+  polished-andesite: {slot: 19, material: POLISHED_ANDESITE, displayname: '&fPolished Andesite', price: 18, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
   polished-diorite: {slot: 20, material: POLISHED_DIORITE, displayname: '&fPolished Diorite', price: 18, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}

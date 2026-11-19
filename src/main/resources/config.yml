@@ -1,0 +1,11 @@
+categories: [end, nether, gear, food, shards]
+economy:
+  # Adjust to the withdrawal command syntax supported by your CoinsEngine version.
+  coinsengine-withdraw-command: 'coinsengine withdraw %player% %amount%'
+messages:
+  no-permission: '&cYou do not have permission.'
+  no-economy: '&cNo compatible economy provider is available.'
+  not-enough: '&cYou do not have enough currency.'
+  inventory-full: '&cYour inventory is full.'
+  purchase: '&aBought &f%amount%x %item% &afor &f%price%&a.'
+  reload: '&aShopMc reloaded.'

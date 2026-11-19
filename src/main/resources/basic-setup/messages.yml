@@ -1,0 +1,26 @@
+messages:
+  no-permission:
+    module:
+      chat: {enabled: true, message: ['&cYou do not have permission.']}
+      actionbar: {enabled: false, message: ''}
+      title: {enabled: false, title: '', subtitle: ''}
+  not-enough:
+    module:
+      chat: {enabled: true, message: ['&cYou do not have enough currency.']}
+      actionbar: {enabled: false, message: ''}
+      title: {enabled: false, title: '', subtitle: ''}
+  inventory-full:
+    module:
+      chat: {enabled: true, message: ['&cYour inventory is full.']}
+      actionbar: {enabled: false, message: ''}
+      title: {enabled: false, title: '', subtitle: ''}
+  successful-purchase:
+    module:
+      chat: {enabled: true, message: ['&aPurchased %amount%x %item% for $%price%.']}
+      actionbar: {enabled: false, message: ''}
+      title: {enabled: false, title: '', subtitle: ''}
+  plugin-reloaded:
+    module:
+      chat: {enabled: true, message: ['&aShopMc reloaded.']}
+      actionbar: {enabled: false, message: ''}
+      title: {enabled: false, title: '', subtitle: ''}

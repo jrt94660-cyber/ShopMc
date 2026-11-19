@@ -1,11 +1,347 @@
-title: '&8sʜᴏᴘ - ᴘʀᴇᴍɪᴜᴍ'
-rows: 3
-back-button: {slot: 18, material: RED_STAINED_GLASS_PANE, displayname: '&#e00202ʙᴀᴄᴋ', lore: ['&fClick to return']}
-next: {slot: 26, material: ARROW, displayname: '&#f00f0cɴᴇxᴛ', lore: ['&fClick to go to next page']}
-last: {slot: 18, material: ARROW, displayname: '&#f00f0cʙᴀᴄᴋ', lore: ['&fClick to go to last page']}
-filler: {enabled: false, material: GRAY_STAINED_GLASS_PANE, displayname: '&7 ', lore: ['&7']}
+title: '&7▷ Shop | Premium'
+rows: 5
+
+back-button:
+  slot: 40
+  material: RED_STAINED_GLASS_PANE
+  displayname: '&#FF0000&lBACK'
+  lore:
+    - '&7[ɴᴀᴠɪɢᴀᴛɪᴏɴ&7]'
+    - ''
+    - '&#FF0000Information:'
+    - '&#FF0000| &fReturn to shop dashboard'
+    - ''
+    - '&#EEC619▷ &l&nCLICK&r &#EEC619to return'
+last:
+  slot: 36
+  material: RED_STAINED_GLASS_PANE
+  displayname: '&#FF0000&lPREVIOUS PAGE'
+  lore:
+    - '&7[ɴᴀᴠɪɢᴀᴛɪᴏɴ&7]'
+    - ''
+    - '&#FF0000Information:'
+    - '&#FF0000| &fGo to previous page'
+    - ''
+    - '&#EEC619▷ &l&nCLICK&r &#EEC619to switch'
+next:
+  slot: 44
+  material: LIME_STAINED_GLASS_PANE
+  displayname: '&#aeff03&lNEXT PAGE'
+  lore:
+    - '&7[ɴᴀᴠɪɢᴀᴛɪᴏɴ&7]'
+    - ''
+    - '&#aeff03Information:'
+    - '&#aeff03| &fGo to next page'
+    - ''
+    - '&#EEC619▷ &l&nCLICK&r &#EEC619to switch'
+filler:
+  enabled: false
+  material: GRAY_STAINED_GLASS_PANE
+  displayname: ' '
+  rows: 5
+  lore: []
 items:
-  diamond: {slot: 0, material: DIAMOND, displayname: '&bPremium Diamond', price: 1000, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
-  netherite: {slot: 1, material: NETHERITE_INGOT, displayname: '&5Premium Netherite', price: 2500, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
-  enchanted-book: {slot: 2, material: ENCHANTED_BOOK, displayname: '&dPremium Enchanted Book', price: 1500, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
-  beacon: {slot: 3, material: BEACON, displayname: '&6Premium Beacon', price: 5000, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
+  netherite-helmet:
+    slot: 10
+    material: NETHERITE_HELMET
+    glow: false
+    displayname: '&#FF00E5&lNETHERITE HELMET'
+    price: 1500000.0
+    command: ''
+    amount: 1
+    enchant:
+      - 'MENDING:1'
+      - 'UNBREAKING:3'
+      - 'PROTECTION:4'
+    lore:
+      - '&7[ɪᴛᴇᴍ&7]'
+      - ''
+      - '&#FF00E5Pricing:'
+      - '&#FF00E5| &fBuy Price: &#aaff00&l$&#aaff001,500,000.00'
+      - ''
+      - '&#EEC619▷ &l&nCLICK&r &#EEC619to purchase'
+  netherite-chestplate:
+    slot: 11
+    material: NETHERITE_CHESTPLATE
+    glow: false
+    displayname: '&#FF00E5&lNETHERITE CHESTPLATE'
+    price: 1500000.0
+    command: ''
+    amount: 1
+    enchant:
+      - 'MENDING:1'
+      - 'UNBREAKING:3'
+      - 'PROTECTION:4'
+    lore:
+      - '&7[ɪᴛᴇᴍ&7]'
+      - ''
+      - '&#FF00E5Pricing:'
+      - '&#FF00E5| &fBuy Price: &#aaff00&l$&#aaff001,500,000.00'
+      - ''
+      - '&#EEC619▷ &l&nCLICK&r &#EEC619to purchase'
+  netherite-leggings:
+    slot: 12
+    material: NETHERITE_LEGGINGS
+    glow: false
+    displayname: '&#FF00E5&lNETHERITE LEGGINGS'
+    price: 1500000.0
+    command: ''
+    amount: 1
+    enchant:
+      - 'MENDING:1'
+      - 'UNBREAKING:3'
+      - 'BLAST_PROTECTION:4'
+      - 'SWIFT_SNEAK:3'
+    lore:
+      - '&7[ɪᴛᴇᴍ&7]'
+      - ''
+      - '&#FF00E5Pricing:'
+      - '&#FF00E5| &fBuy Price: &#aaff00&l$&#aaff001,500,000.00'
+      - ''
+      - '&#EEC619▷ &l&nCLICK&r &#EEC619to purchase'
+  netherite-boots:
+    slot: 13
+    material: NETHERITE_BOOTS
+    glow: false
+    displayname: '&#FF00E5&lNETHERITE BOOTS'
+    price: 1500000.0
+    command: ''
+    amount: 1
+    enchant:
+      - 'MENDING:1'
+      - 'UNBREAKING:3'
+      - 'BLAST_PROTECTION:4'
+    lore:
+      - '&7[ɪᴛᴇᴍ&7]'
+      - ''
+      - '&#FF00E5Pricing:'
+      - '&#FF00E5| &fBuy Price: &#aaff00&l$&#aaff001,500,000.00'
+      - ''
+      - '&#EEC619▷ &l&nCLICK&r &#EEC619to purchase'
+  netherite-sword:
+    slot: 14
+    material: NETHERITE_SWORD
+    glow: false
+    displayname: '&#FF00E5&lNETHERITE SWORD'
+    price: 800000.0
+    command: ''
+    amount: 1
+    enchant:
+      - 'MENDING:1'
+      - 'SHARPNESS:4'
+      - 'UNBREAKING:3'
+      - 'FIRE_ASPECT:2'
+      - 'KNOCKBACK:1'
+    lore:
+      - '&7[ɪᴛᴇᴍ&7]'
+      - ''
+      - '&#FF00E5Pricing:'
+      - '&#FF00E5| &fBuy Price: &#aaff00&l$&#aaff00800,000.00'
+      - ''
+      - '&#EEC619▷ &l&nCLICK&r &#EEC619to purchase'
+  netherite-pickaxe:
+    slot: 15
+    material: NETHERITE_PICKAXE
+    glow: false
+    displayname: '&#FF00E5&lNETHERITE PICKAXE'
+    price: 800000.0
+    command: ''
+    amount: 1
+    enchant:
+      - 'MENDING:1'
+      - 'EFFICIENCY:5'
+      - 'UNBREAKING:3'
+      - 'SILK_TOUCH:1'
+    lore:
+      - '&7[ɪᴛᴇᴍ&7]'
+      - ''
+      - '&#FF00E5Pricing:'
+      - '&#FF00E5| &fBuy Price: &#aaff00&l$&#aaff00800,000.00'
+      - ''
+      - '&#EEC619▷ &l&nCLICK&r &#EEC619to purchase'
+  netherite-axe:
+    slot: 16
+    material: NETHERITE_AXE
+    glow: false
+    displayname: '&#FF00E5&lNETHERITE AXE'
+    price: 800000.0
+    command: ''
+    amount: 1
+    enchant:
+      - 'MENDING:1'
+      - 'EFFICIENCY:5'
+      - 'UNBREAKING:3'
+      - 'SILK_TOUCH:1'
+    lore:
+      - '&7[ɪᴛᴇᴍ&7]'
+      - ''
+      - '&#FF00E5Pricing:'
+      - '&#FF00E5| &fBuy Price: &#aaff00&l$&#aaff00800,000.00'
+      - ''
+      - '&#EEC619▷ &l&nCLICK&r &#EEC619to purchase'
+  netherite-shovel:
+    slot: 19
+    material: NETHERITE_SHOVEL
+    glow: false
+    displayname: '&#FF00E5&lNETHERITE SHOVEL'
+    price: 800000.0
+    command: ''
+    amount: 1
+    enchant:
+      - 'MENDING:1'
+      - 'EFFICIENCY:5'
+      - 'UNBREAKING:3'
+    lore:
+      - '&7[ɪᴛᴇᴍ&7]'
+      - ''
+      - '&#FF00E5Pricing:'
+      - '&#FF00E5| &fBuy Price: &#aaff00&l$&#aaff00800,000.00'
+      - ''
+      - '&#EEC619▷ &l&nCLICK&r &#EEC619to purchase'
+  armor-trim-head:
+    slot: 20
+    material: DRAGON_HEAD
+    glow: true
+    displayname: '&#FF00E5&lARMOR TRIM BOX'
+    price: 800000.0
+    command: ''
+    amount: 1
+    lore:
+      - '&7[ɪᴛᴇᴍ&7]'
+      - ''
+      - '&#FF00E5Pricing:'
+      - '&#FF00E5| &fBuy Price: &#aaff00&l$&#aaff00800,000.00'
+      - ''
+      - '&#EEC619▷ &l&nCLICK&r &#EEC619to purchase'
+  mace:
+    slot: 21
+    material: MACE
+    glow: false
+    displayname: '&#FF00E5&lMACE'
+    price: 1200000.0
+    command: ''
+    amount: 1
+    enchant:
+      - 'MENDING:1'
+      - 'UNBREAKING:3'
+      - 'DENSITY:5'
+      - 'BREACH:4'
+      - 'WIND_BURST:3'
+    lore:
+      - '&7[ɪᴛᴇᴍ&7]'
+      - ''
+      - '&#FF00E5Pricing:'
+      - '&#FF00E5| &fBuy Price: &#aaff00&l$&#aaff001,200,000.00'
+      - ''
+      - '&#EEC619▷ &l&nCLICK&r &#EEC619to purchase'
+  trident:
+    slot: 22
+    material: TRIDENT
+    glow: false
+    displayname: '&#FF00E5&lTRIDENT'
+    price: 1200000.0
+    command: ''
+    amount: 1
+    enchant:
+      - 'MENDING:1'
+      - 'UNBREAKING:3'
+      - 'LOYALTY:3'
+      - 'IMPALING:5'
+      - 'CHANNELING:1'
+    lore:
+      - '&7[ɪᴛᴇᴍ&7]'
+      - ''
+      - '&#FF00E5Pricing:'
+      - '&#FF00E5| &fBuy Price: &#aaff00&l$&#aaff001,200,000.00'
+      - ''
+      - '&#EEC619▷ &l&nCLICK&r &#EEC619to purchase'
+  emerald:
+    slot: 23
+    material: EMERALD
+    glow: false
+    displayname: '&#FF00E5&lEMERALD'
+    price: 5000.0
+    command: ''
+    amount: 1
+    lore:
+      - '&7[ɪᴛᴇᴍ&7]'
+      - ''
+      - '&#FF00E5Pricing:'
+      - '&#FF00E5| &fBuy Price: &#aaff00&l$&#aaff005,000.00'
+      - ''
+      - '&#EEC619▷ &l&nCLICK&r &#EEC619to purchase'
+  diamond:
+    slot: 24
+    material: DIAMOND
+    glow: false
+    displayname: '&#FF00E5&lDIAMOND'
+    price: 8000.0
+    command: ''
+    amount: 1
+    lore:
+      - '&7[ɪᴛᴇᴍ&7]'
+      - ''
+      - '&#FF00E5Pricing:'
+      - '&#FF00E5| &fBuy Price: &#aaff00&l$&#aaff008,000.00'
+      - ''
+      - '&#EEC619▷ &l&nCLICK&r &#EEC619to purchase'
+  lapis_lazuli:
+    slot: 25
+    material: LAPIS_LAZULI
+    glow: false
+    displayname: '&#FF00E5&lLAPIS LAZULI'
+    price: 1000.0
+    command: ''
+    amount: 1
+    lore:
+      - '&7[ɪᴛᴇᴍ&7]'
+      - ''
+      - '&#FF00E5Pricing:'
+      - '&#FF00E5| &fBuy Price: &#aaff00&l$&#aaff001,000.00'
+      - ''
+      - '&#EEC619▷ &l&nCLICK&r &#EEC619to purchase'
+  amethyst_shard:
+    slot: 26
+    material: AMETHYST_SHARD
+    glow: false
+    displayname: '&#FF00E5&lAMETHYST SHARD'
+    price: 700.0
+    command: ''
+    amount: 1
+    lore:
+      - '&7[ɪᴛᴇᴍ&7]'
+      - ''
+      - '&#FF00E5Pricing:'
+      - '&#FF00E5| &fBuy Price: &#aaff00&l$&#aaff00700.00'
+      - ''
+      - '&#EEC619▷ &l&nCLICK&r &#EEC619to purchase'
+  gold_ingot:
+    slot: 28
+    material: GOLD_INGOT
+    glow: false
+    displayname: '&#FF00E5&lGOLD INGOT'
+    price: 400.0
+    command: ''
+    amount: 1
+    lore:
+      - '&7[ɪᴛᴇᴍ&7]'
+      - ''
+      - '&#FF00E5Pricing:'
+      - '&#FF00E5| &fBuy Price: &#aaff00&l$&#aaff00400.00'
+      - ''
+      - '&#EEC619▷ &l&nCLICK&r &#EEC619to purchase'
+  enchanted_golden_apple:
+    slot: 29
+    material: ENCHANTED_GOLDEN_APPLE
+    glow: false
+    displayname: '&#FF00E5&lENCHANTED GOLDEN APPLE'
+    price: 5000000.0
+    command: ''
+    amount: 1
+    lore:
+      - '&7[ɪᴛᴇᴍ&7]'
+      - ''
+      - '&#FF00E5Pricing:'
+      - '&#FF00E5| &fBuy Price: &#aaff00&l$&#aaff005,000,000.00'
+      - ''
+      - '&#EEC619▷ &l&nCLICK&r &#EEC619to purchase'

@@ -1,0 +1,16 @@
+title: '&8sʜᴏᴘ - ɢᴇᴀʀ'
+rows: 3
+back-button: {slot: 18, material: RED_STAINED_GLASS_PANE, displayname: '&#e00202ʙᴀᴄᴋ', lore: ['&fClick to return']}
+next: {slot: 26, material: ARROW, displayname: '&#f00f0cɴᴇxᴛ', lore: ['&fClick to go to next page']}
+last: {slot: 18, material: ARROW, displayname: '&#f00f0cʙᴀᴄᴋ', lore: ['&fClick to go to last page']}
+filler: {enabled: false, material: GRAY_STAINED_GLASS_PANE, displayname: '&7 ', rows: 3, lore: ['&7']}
+items:
+  obsidian: {slot: 9, material: OBSIDIAN, displayname: '&fObsidian', price: 100, command: '', amount: 1, lore: ['&fBuy Price: &#0bf52b$%price%']}
+  end-crystal: {slot: 10, material: END_CRYSTAL, displayname: '&fEnd Crystal', price: 350, command: '', amount: 1, lore: ['&fBuy Price: &#0bf52b$%price%']}
+  respawn-anchor: {slot: 11, material: RESPAWN_ANCHOR, displayname: '&fRespawn Anchor', price: 1000, command: '', amount: 1, lore: ['&fBuy Price: &#0bf52b$%price%']}
+  glowstone: {slot: 12, material: GLOWSTONE, displayname: '&fGlowstone', price: 100, command: '', amount: 1, lore: ['&fBuy Price: &#0bf52b$%price%']}
+  totem: {slot: 13, material: TOTEM_OF_UNDYING, displayname: '&fTotem of Undying', price: 1250, command: '', amount: 1, lore: ['&fBuy Price: &#0bf52b$%price%']}
+  ender-pearl: {slot: 14, material: ENDER_PEARL, displayname: '&fEnder Pearl', price: 75, command: '', amount: 1, lore: ['&fBuy Price: &#0bf52b$%price%']}
+  golden-apple: {slot: 15, material: GOLDEN_APPLE, displayname: '&fGolden Apple', price: 250, command: '', amount: 1, lore: ['&fBuy Price: &#0bf52b$%price%']}
+  exp-bottle: {slot: 16, material: EXPERIENCE_BOTTLE, displayname: '&fBottle o Enchanting', price: 100, command: '', amount: 1, lore: ['&fBuy Price: &#0bf52b$%price%']}
+  arrow: {slot: 17, material: ARROW, displayname: '&fArrow', price: 500, command: '', amount: 1, lore: ['&fBuy Price: &#0bf52b$%price%']}

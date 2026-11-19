@@ -1,4 +1,4 @@
-categories: [end, nether, gear, food]
+categories: [food, blocks, farm, mob, gear, red, premium, shards]
 economy:
   # Adjust to the withdrawal command syntax supported by your CoinsEngine version.
   coinsengine-withdraw-command: 'coinsengine withdraw %player% %amount% %currency%'

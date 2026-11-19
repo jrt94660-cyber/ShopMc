@@ -1,54 +1,12 @@
 title: '&8ѕʜᴏᴘ'
 rows: 3
-filler:
-  enabled: false
-  material: GRAY_STAINED_GLASS_PANE
-  displayname: '&7 '
-  lore: ['&7']
+filler: {enabled: false, material: GRAY_STAINED_GLASS_PANE, displayname: '&7 ', lore: ['&7']}
 categories:
-  end:
-    displayname: '&#0bf592ᴇɴᴅ'
-    material: END_STONE
-    slot: 11
-    action: end
-    glow: false
-    premium: false
-    money-provider: {vault: true, playerpoints: false, coinsengine: false, coinsengine-currency: ''}
-    lore: ['&fClick to view']
-  nether:
-    displayname: '&#0bf592ɴᴇᴛʜᴇʀ'
-    material: MAGMA_BLOCK
-    slot: 12
-    action: nether
-    glow: false
-    premium: false
-    money-provider: {vault: true, playerpoints: false, coinsengine: false, coinsengine-currency: ''}
-    lore: ['&fClick to view']
-  gear:
-    displayname: '&#0bf592ɢᴇᴀʀ'
-    material: TOTEM_OF_UNDYING
-    slot: 13
-    action: gear
-    glow: false
-    premium: false
-    money-provider: {vault: true, playerpoints: false, coinsengine: false, coinsengine-currency: ''}
-    lore: ['&fClick to view']
-  food:
-    displayname: '&#0bf592ꜰᴏᴏᴅ'
-    material: COOKED_BEEF
-    slot: 14
-    action: food
-    glow: false
-    premium: false
-    money-provider: {vault: true, playerpoints: false, coinsengine: false, coinsengine-currency: ''}
-    lore: ['&fClick to view']
-  shards:
-    displayname: '&#0bf592sʜᴀʀᴅs'
-    material: AMETHYST_SHARD
-    slot: 15
-    action: shards
-    command: shardshop
-    glow: false
-    premium: false
-    money-provider: {vault: true, playerpoints: false, coinsengine: false, coinsengine-currency: ''}
-    lore: ['&fClick to view']
+  food: {displayname: '&#0bf592ꜰᴏᴏᴅ', material: COOKED_BEEF, slot: 10, action: food, glow: false, premium: false, money-provider: {vault: true, playerpoints: false, coinsengine: false, coinsengine-currency: ''}, lore: ['&fClick to view']}
+  blocks: {displayname: '&#0bf592ʙʟᴏᴄᴋs', material: BRICKS, slot: 11, action: blocks, glow: false, premium: false, money-provider: {vault: true, playerpoints: false, coinsengine: false, coinsengine-currency: ''}, lore: ['&fClick to view']}
+  farm: {displayname: '&#0bf592ꜰᴀʀᴍ', material: WHEAT, slot: 12, action: farm, glow: false, premium: false, money-provider: {vault: true, playerpoints: false, coinsengine: false, coinsengine-currency: ''}, lore: ['&fClick to view']}
+  mob: {displayname: '&#0bf592ᴍᴏʙ', material: SPAWNER, slot: 13, action: mob, glow: false, premium: false, money-provider: {vault: true, playerpoints: false, coinsengine: false, coinsengine-currency: ''}, lore: ['&fClick to view']}
+  gear: {displayname: '&#0bf592ɢᴇᴀʀ', material: TOTEM_OF_UNDYING, slot: 14, action: gear, glow: false, premium: false, money-provider: {vault: true, playerpoints: false, coinsengine: false, coinsengine-currency: ''}, lore: ['&fClick to view']}
+  red: {displayname: '&#0bf592ʀᴇᴅsᴛᴏɴᴇ', material: REDSTONE, slot: 15, action: red, glow: false, premium: false, money-provider: {vault: true, playerpoints: false, coinsengine: false, coinsengine-currency: ''}, lore: ['&fClick to view']}
+  premium: {displayname: '&#0bf592ᴘʀᴇᴍɪᴜᴍ', material: DIAMOND, slot: 16, action: premium, glow: false, premium: false, money-provider: {vault: true, playerpoints: false, coinsengine: false, coinsengine-currency: ''}, lore: ['&fClick to view']}
+  shards: {displayname: '&#a303f9sʜᴀʀᴅs', material: AMETHYST_SHARD, slot: 22, action: shards, glow: false, premium: false, money-provider: {vault: false, playerpoints: false, coinsengine: true, coinsengine-currency: shards}, lore: ['&fClick to view']}

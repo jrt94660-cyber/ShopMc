@@ -83,7 +83,7 @@ public final class ShopMc extends JavaPlugin implements Listener, CommandExecuto
         if(!(s instanceof Player p)){s.sendMessage("Players only.");return true;}if(!p.hasPermission("smpshop.use")){msg(p,"no-permission");return true;}
         if(a.length==0){main(p);return true;}
         String key=a[0].toLowerCase(Locale.ROOT);if(cats.containsKey(key)){category(p,key,0);return true;}
-        s.sendMessage(col(getConfig().getString("messages.unknown-category","&cUnknown shop category. &7Available: &f"+String.join(", ",cats.keySet()))));return true;
+        s.sendMessage(col(getConfig().getString("messages.unknown-category","&cUnknown shop category. &7Available: &f%categories%").replace("%categories%",String.join(", ",cats.keySet()))));return true;
     }
     @Override public List<String> onTabComplete(CommandSender sender,Command command,String alias,String[] args){
         if(args.length==1){String prefix=args[0].toLowerCase(Locale.ROOT);List<String> suggestions=new ArrayList<>();if("reload".startsWith(prefix)&&sender.hasPermission("smpshop.admin"))suggestions.add("reload");for(String key:cats.keySet())if(key.startsWith(prefix))suggestions.add(key);return suggestions;}

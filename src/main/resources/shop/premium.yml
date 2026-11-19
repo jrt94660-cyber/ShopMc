@@ -1,0 +1,11 @@
+title: '&8sʜᴏᴘ - ᴘʀᴇᴍɪᴜᴍ'
+rows: 3
+back-button: {slot: 18, material: RED_STAINED_GLASS_PANE, displayname: '&#e00202ʙᴀᴄᴋ', lore: ['&fClick to return']}
+next: {slot: 26, material: ARROW, displayname: '&#f00f0cɴᴇxᴛ', lore: ['&fClick to go to next page']}
+last: {slot: 18, material: ARROW, displayname: '&#f00f0cʙᴀᴄᴋ', lore: ['&fClick to go to last page']}
+filler: {enabled: false, material: GRAY_STAINED_GLASS_PANE, displayname: '&7 ', lore: ['&7']}
+items:
+  diamond: {slot: 0, material: DIAMOND, displayname: '&bPremium Diamond', price: 1000, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
+  netherite: {slot: 1, material: NETHERITE_INGOT, displayname: '&5Premium Netherite', price: 2500, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
+  enchanted-book: {slot: 2, material: ENCHANTED_BOOK, displayname: '&dPremium Enchanted Book', price: 1500, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
+  beacon: {slot: 3, material: BEACON, displayname: '&6Premium Beacon', price: 5000, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}

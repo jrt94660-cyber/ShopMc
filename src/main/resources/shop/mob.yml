@@ -11,5 +11,5 @@ items:
   sheep-egg: {slot: 3, material: SHEEP_SPAWN_EGG, displayname: '&fSheep Spawn Egg', price: 550, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
   zombie-egg: {slot: 4, material: ZOMBIE_SPAWN_EGG, displayname: '&fZombie Spawn Egg', price: 1500, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
   skeleton-egg: {slot: 5, material: SKELETON_SPAWN_EGG, displayname: '&fSkeleton Spawn Egg', price: 1800, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
-  creeper-egg: {slot: 6, material: CREEPER_SPAWN_EGG, displayname: '&fCreeper Spawn Egg', price: 2000, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%'}
+  creeper-egg: {slot: 6, material: CREEPER_SPAWN_EGG, displayname: '&fCreeper Spawn Egg', price: 2000, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
   spider-egg: {slot: 7, material: SPIDER_SPAWN_EGG, displayname: '&fSpider Spawn Egg', price: 1750, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}

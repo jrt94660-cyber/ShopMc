@@ -52,7 +52,7 @@ public final class ShopMc extends JavaPlugin implements Listener, CommandExecuto
         FileConfiguration mainMenu = yaml("shop/main-shop-gui.yml");
         ConfigurationSection categories = mainMenu.getConfigurationSection("categories");
         if (categories == null) return;
-        List<String> configured = new ArrayList<>(getConfig().getStringList("categories"));
+        List<String> configured = new ArrayList<>();
         for (String entry : categories.getKeys(false)) {
             ConfigurationSection section = categories.getConfigurationSection(entry);
             if (section == null) continue;

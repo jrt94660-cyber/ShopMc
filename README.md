@@ -1,23 +1,37 @@
-# ShopMc — Recreated
+# ShopMc 1.0.4
 
-A clean-room Paper shop plugin based on the behavior/configuration of the supplied SMPShop 26.3 jar. License activation, license validation, expiration checks, license-server communications, and premium access locks are intentionally not included.
+Shop GUI plugin for Paper 1.21+ (Java 21). Configurable categories, item pricing, purchase confirmation, and economy routing.
+
+## Commands
+- `/shop` opens the main category menu.
+- `/shop food`, `/shop blocks`, `/shop farm`, `/shop mob`, `/shop gear`, `/shop red`, `/shop premium`, `/shop shards` opens the selected category directly.
+- `/shop reload` reloads configuration.
+
+Tab completion suggests available category names and filters by the typed prefix; `reload` is suggested to users with the admin permission.
+
+## Permissions
+- `smpshop.use` — use the shop (default: true).
+- `smpshop.admin` — reload the shop (default: OP).
 
 ## Features
-- Configurable main category menu and category inventories.
-- End, Nether, Gear, and Food shops with configurable prices, materials, display names, lore, glow, commands, and item quantities.
-- Shop purchase confirmation inventory with amount controls for stackable goods.
-- Vault economy; optional CoinsEngine command-based currency withdrawal; legacy PlayerPoints category configuration maps to the configured Shards currency.
-- Message routing to chat, action bar, and title/subtitle using `basic-setup/messages.yml`.
-- Sounds and money-format suffixes/decimals configurable.
-- Shards category button runs the external `/shardshop` command (the ShardShop plugin must be installed).
-- `/shop` and `/shop reload`.
+- Main menu and configurable category menus.
+- Shards is an internal shop category; its button opens the category GUI, not an external `/shardshop` command.
+- Purchase confirmation with stack amount controls.
+- Configurable material, name, lore, prices, enchantments, item quantity, and purchase commands.
+- Vault, PlayerPoints, and command-based CoinsEngine withdrawals.
+- Chat/action-bar/title message routing and sound settings.
+- Supports command placeholders `%player%`, `{player}`, `%amount%`, `{amount}`, `%price%`, `{price}`, `%currency%`, and `{currency}`.
+
+## Config files
+- `config.yml`
+- `shop/main-shop-gui.yml`
+- `shop/<category>.yml`
+- `basic-setup/messages.yml`, `sounds.yml`, `money-format.yml`
+- `economy-confirm-gui/*.yml`
 
 ## Build
-Java 21, Gradle 8.14.3. Run `gradle clean build`. CI builds automatically on pushes and uploads the JAR as a workflow artifact.
-
-## Commands and permissions
-- `/shop` — opens shop; `smpshop.use` (default true)
-- `/shop reload` — reloads; `smpshop.admin` (default OP)
-
-## Shards / CoinsEngine
-The default currency value is `shards`. Set `economy.coinsengine-withdraw-command` to the exact withdrawal command supported by your CoinsEngine version, using `%player%`, `%amount%`, and `%currency%` placeholders. The Shards main-menu icon runs `/shardshop` instead of opening an internal category.
+Java 21 and Gradle 8.14.3:
+```
+gradle clean build
+``
+CI builds on pushes to main and uploads the JAR as a workflow artifact.

@@ -1,21 +1,253 @@
-title: '&8ѕʜᴏᴘ - ѕʜᴀʀᴅ'
-rows: 3
-back-button: {slot: 18, material: RED_STAINED_GLASS_PANE, displayname: '&#e00202ʙᴀᴄᴋ', lore: ['&fClick to return']}
-next: {slot: 26, material: ARROW, displayname: '&#f00f0cɴᴇxᴛ', lore: ['&fClick to go to next page']}
-last: {slot: 18, material: ARROW, displayname: '&#f00f0cʙᴀᴄᴋ', lore: ['&fClick to go to last page']}
-filler: {enabled: false, material: GRAY_STAINED_GLASS_PANE, displayname: '&7 ', rows: 3, lore: ['&7']}
+title: '&7▷ Shop | Shards'
+rows: 5
+
+back-button:
+  slot: 40
+  material: RED_STAINED_GLASS_PANE
+  displayname: '&#FF0000&lBACK'
+  lore:
+    - '&7[ɴᴀᴠɪɢᴀᴛɪᴏɴ&7]'
+    - ''
+    - '&#FF0000Information:'
+    - '&#FF0000| &fReturn to shop dashboard'
+    - ''
+    - '&#EEC619▷ &l&nCLICK&r &#EEC619to return'
+last:
+  slot: 27
+  material: RED_STAINED_GLASS_PANE
+  displayname: '&#FF0000&lPREVIOUS PAGE'
+  lore:
+    - '&7[ɴᴀᴠɪɢᴀᴛɪᴏɴ&7]'
+    - ''
+    - '&#FF0000Information:'
+    - '&#FF0000| &fGo to previous page'
+    - ''
+    - '&#EEC619▷ &l&nCLICK&r &#EEC619to switch'
+next:
+  slot: 35
+  material: LIME_STAINED_GLASS_PANE
+  displayname: '&#aeff03&lNEXT PAGE'
+  lore:
+    - '&7[ɴᴀᴠɪɢᴀᴛɪᴏɴ&7]'
+    - ''
+    - '&#aeff03Information:'
+    - '&#aeff03| &fGo to next page'
+    - ''
+    - '&#EEC619▷ &l&nCLICK&r &#EEC619to switch'
+filler:
+  enabled: false
+  material: GRAY_STAINED_GLASS_PANE
+  displayname: ' '
+  rows: 5
+  lore: []
 items:
-  common-key: {slot: 2, material: TRIPWIRE_HOOK, displayname: '&#24981aᴄᴏᴍᴍᴏɴ ᴋᴇʏ', price: 200, amount: 1, command: 'dc givekey %player% Common %amount%', lore: ['&fBuy Price: &#a303f9%price% Shards']}
-  prime-key: {slot: 3, material: TRIPWIRE_HOOK, displayname: '&#2386d3ᴘʀɪᴍᴇ ᴋᴇʏ', price: 1500, amount: 1, command: 'dc givekey %player% Prime %amount%', lore: ['&fBuy Price: &#a303f9%price% Shards']}
-  gold-key: {slot: 4, material: TRIPWIRE_HOOK, displayname: '&#e3b900ɢᴏʟᴅ ᴋᴇʏ', price: 1500, amount: 1, command: 'dc givekey %player% Gold %amount%', lore: ['&fBuy Price: &#a303f9%price% Shards']}
-  amethyst-key: {slot: 5, material: TRIPWIRE_HOOK, displayname: '&#9966CCᴀᴍᴇᴛʜʏꜱᴛ ᴋᴇʏ', price: 4000, amount: 1, command: 'dc givekey %player% Amethyst %amount%', lore: ['&fBuy Price: &#a303f9%price% Shards']}
-  crimson-key: {slot: 6, material: TRIPWIRE_HOOK, displayname: '&#c42119ᴄʀɪᴍꜱᴏɴ ᴋᴇʏ', price: 2000, amount: 1, command: 'dc givekey %player% Crimson %amount%', lore: ['&fBuy Price: &#a303f9%price% Shards']}
-  pig-spawner: {slot: 9, material: SPAWNER, displayname: '&dPig Spawner', price: 250, amount: 1, command: 'ds give %player% pig %amount%', lore: ['&ePig','&fBuy Price: &#a303f9%price% Shards']}
-  cow-spawner: {slot: 10, material: SPAWNER, displayname: '&dCow Spawner', price: 350, amount: 1, command: 'ds give %player% cow %amount%', lore: ['&eCow','&fBuy Price: &#a303f9%price% Shards']}
-  zombie-spawner: {slot: 11, material: SPAWNER, displayname: '&dZombie Spawner', price: 400, amount: 1, command: 'ds give %player% zombie %amount%', lore: ['&eZombie','&fBuy Price: &#a303f9%price% Shards']}
-  spider-spawner: {slot: 12, material: SPAWNER, displayname: '&dSpider Spawner', price: 750, amount: 1, command: 'ds give %player% spider %amount%', lore: ['&eSpider','&fBuy Price: &#a303f9%price% Shards']}
-  skeleton-spawner: {slot: 13, material: SPAWNER, displayname: '&dSkeleton Spawner', price: 500, amount: 1, command: 'ds give %player% skeleton %amount%', lore: ['&eSkeleton','&fBuy Price: &#a303f9%price% Shards']}
-  creeper-spawner: {slot: 14, material: SPAWNER, displayname: '&dCreeper Spawner', price: 625, amount: 1, command: 'ds give %player% creeper %amount%', lore: ['&eCreeper','&fBuy Price: &#a303f9%price% Shards']}
-  zombie-piglin-spawner: {slot: 15, material: SPAWNER, displayname: '&dZombified Piglin Spawner', price: 750, amount: 1, command: 'ds give %player% zombie_piglin %amount%', lore: ['&eZombified Piglin','&fBuy Price: &#a303f9%price% Shards']}
-  blaze-spawner: {slot: 16, material: SPAWNER, displayname: '&dBlaze Spawner', price: 1000, amount: 1, command: 'ds give %player% blaze %amount%', lore: ['&eBlaze','&fBuy Price: &#a303f9%price% Shards']}
-  iron-golem-spawner: {slot: 17, material: SPAWNER, displayname: '&dIron Golem Spawner', price: 1500, amount: 1, command: 'ds give %player% iron_golem %amount%', lore: ['&eIron Golem','&fBuy Price: &#a303f9%price% Shards']}
+  common-key:
+    slot: 10
+    material: TRIPWIRE_HOOK
+    glow: false
+    displayname: '&#24981a&lCOMMON KEY'
+    price: 200.0
+    command: 'smpcrate give %player% common {amount}'
+    amount: 1
+    lore:
+      - '&7[ɪᴛᴇᴍ&7]'
+      - ''
+      - '&#24981aPricing:'
+      - '&#24981a| &fBuy Price: &#FF00E5200 ☀ Shards'
+      - ''
+      - '&#EEC619▷ &l&nCLICK&r &#EEC619to purchase'
+  prime-key:
+    slot: 11
+    material: TRIPWIRE_HOOK
+    glow: false
+    displayname: '&#2386d3&lPRIME KEY'
+    price: 1500.0
+    command: 'smpcrate give %player% prime {amount}'
+    amount: 1
+    lore:
+      - '&7[ɪᴛᴇᴍ&7]'
+      - ''
+      - '&#2386d3Pricing:'
+      - '&#2386d3| &fBuy Price: &#FF00E51,500 ☀ Shards'
+      - ''
+      - '&#EEC619▷ &l&nCLICK&r &#EEC619to purchase'
+  gold-key:
+    slot: 12
+    material: TRIPWIRE_HOOK
+    glow: false
+    displayname: '&#e3b900&lGOLD KEY'
+    price: 1500.0
+    command: 'smpcrate give %player% gold {amount}'
+    amount: 1
+    lore:
+      - '&7[ɪᴛᴇᴍ&7]'
+      - ''
+      - '&#e3b900Pricing:'
+      - '&#e3b900| &fBuy Price: &#FF00E51,500 ☀ Shards'
+      - ''
+      - '&#EEC619▷ &l&nCLICK&r &#EEC619to purchase'
+  amethyst-key:
+    slot: 13
+    material: TRIPWIRE_HOOK
+    glow: false
+    displayname: '&#9966CC&lAMETHYST KEY'
+    price: 4000.0
+    command: 'smpcrate give %player% amethyst {amount}'
+    amount: 1
+    lore:
+      - '&7[ɪᴛᴇᴍ&7]'
+      - ''
+      - '&#9966CCPricing:'
+      - '&#9966CC| &fBuy Price: &#FF00E54,000 ☀ Shards'
+      - ''
+      - '&#EEC619▷ &l&nCLICK&r &#EEC619to purchase'
+  crimson-key:
+    slot: 14
+    material: TRIPWIRE_HOOK
+    glow: false
+    displayname: '&#c42119&lCRIMSON KEY'
+    price: 2000.0
+    command: 'smpcrate give %player% crimson {amount}'
+    amount: 1
+    lore:
+      - '&7[ɪᴛᴇᴍ&7]'
+      - ''
+      - '&#c42119Pricing:'
+      - '&#c42119| &fBuy Price: &#FF00E52,000 ☀ Shards'
+      - ''
+      - '&#EEC619▷ &l&nCLICK&r &#EEC619to purchase'
+  pig-spawner:
+    slot: 19
+    material: SPAWNER
+    glow: false
+    displayname: '&dPig Spawner'
+    price: 250.0
+    command: 'smpspawner give %player% pig {amount}'
+    amount: 1
+    lore:
+      - '&7[SPAWNER]'
+      - ''
+      - '&dPricing:'
+      - '&d| &fBuy Price: &#FF00E5250 ☀ Shards'
+      - ''
+      - '&#EEC619▷ &l&nCLICK&r &#EEC619to purchase'
+  cow-spawner:
+    slot: 20
+    material: SPAWNER
+    glow: false
+    displayname: '&dCow Spawner'
+    price: 350.0
+    command: 'smpspawner give %player% cow {amount}'
+    amount: 1
+    lore:
+      - '&7[SPAWNER]'
+      - ''
+      - '&dPricing:'
+      - '&d| &fBuy Price: &#FF00E5350 ☀ Shards'
+      - ''
+      - '&#EEC619▷ &l&nCLICK&r &#EEC619to purchase'
+  zombie-spawner:
+    slot: 21
+    material: SPAWNER
+    glow: false
+    displayname: '&dZombie Spawner'
+    price: 400.0
+    command: 'smpspawner give %player% zombie {amount}'
+    amount: 1
+    lore:
+      - '&7[SPAWNER]'
+      - ''
+      - '&dPricing:'
+      - '&d| &fBuy Price: &#FF00E5400 ☀ Shards'
+      - ''
+      - '&#EEC619▷ &l&nCLICK&r &#EEC619to purchase'
+  spider-spawner:
+    slot: 22
+    material: SPAWNER
+    glow: false
+    displayname: '&dSpider Spawner'
+    price: 750.0
+    command: 'smpspawner give %player% spider {amount}'
+    amount: 1
+    lore:
+      - '&7[SPAWNER]'
+      - ''
+      - '&dPricing:'
+      - '&d| &fBuy Price: &#FF00E5750 ☀ Shards'
+      - ''
+      - '&#EEC619▷ &l&nCLICK&r &#EEC619to purchase'
+  skeleton-spawner:
+    slot: 23
+    material: SPAWNER
+    glow: false
+    displayname: '&dSkeleton Spawner'
+    price: 500.0
+    command: 'smpspawner give %player% skeleton {amount}'
+    amount: 1
+    lore:
+      - '&7[SPAWNER]'
+      - ''
+      - '&dPricing:'
+      - '&d| &fBuy Price: &#FF00E5500 ☀ Shards'
+      - ''
+      - '&#EEC619▷ &l&nCLICK&r &#EEC619to purchase'
+  creeper-spawner:
+    slot: 24
+    material: SPAWNER
+    glow: false
+    displayname: '&dCreeper Spawner'
+    price: 625.0
+    command: 'smpspawner give %player% creeper {amount}'
+    amount: 1
+    lore:
+      - '&7[SPAWNER]'
+      - ''
+      - '&dPricing:'
+      - '&d| &fBuy Price: &#FF00E5625 ☀ Shards'
+      - ''
+      - '&#EEC619▷ &l&nCLICK&r &#EEC619to purchase'
+  zombie-piglin-spawner:
+    slot: 25
+    material: SPAWNER
+    glow: false
+    displayname: '&dZombified Piglin Spawner'
+    price: 750.0
+    command: 'smpspawner give %player% zombie_piglin {amount}'
+    amount: 1
+    lore:
+      - '&7[SPAWNER]'
+      - ''
+      - '&dPricing:'
+      - '&d| &fBuy Price: &#FF00E5750 ☀ Shards'
+      - ''
+      - '&#EEC619▷ &l&nCLICK&r &#EEC619to purchase'
+  blaze-spawner:
+    slot: 28
+    material: SPAWNER
+    glow: false
+    displayname: '&dBlaze Spawner'
+    price: 1000.0
+    command: 'smpspawner give %player% blaze {amount}'
+    amount: 1
+    lore:
+      - '&7[SPAWNER]'
+      - ''
+      - '&dPricing:'
+      - '&d| &fBuy Price: &#FF00E51,000 ☀ Shards'
+      - ''
+      - '&#EEC619▷ &l&nCLICK&r &#EEC619to purchase'
+  iron-golem-spawner:
+    slot: 29
+    material: SPAWNER
+    glow: false
+    displayname: '&dIron Golem Spawner'
+    price: 1500.0
+    command: 'smpspawner give %player% iron_golem {amount}'
+    amount: 1
+    lore:
+      - '&7[SPAWNER]'
+      - ''
+      - '&dPricing:'
+      - '&d| &fBuy Price: &#FF00E51,500 ☀ Shards'
+      - ''
+      - '&#EEC619▷ &l&nCLICK&r &#EEC619to purchase'

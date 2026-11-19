@@ -47,6 +47,7 @@ categories:
     material: AMETHYST_SHARD
     slot: 15
     action: shards
+    command: shardshop
     glow: false
     premium: false
     money-provider: {vault: true, playerpoints: false, coinsengine: false, coinsengine-currency: ''}

@@ -1,0 +1,15 @@
+title: '&8sʜᴏᴘ - ᴍᴏʙ'
+rows: 3
+back-button: {slot: 18, material: RED_STAINED_GLASS_PANE, displayname: '&#e00202ʙᴀᴄᴋ', lore: ['&fClick to return']}
+next: {slot: 26, material: ARROW, displayname: '&#f00f0cɴᴇxᴛ', lore: ['&fClick to go to next page']}
+last: {slot: 18, material: ARROW, displayname: '&#f00f0cʙᴀᴄᴋ', lore: ['&fClick to go to last page']}
+filler: {enabled: false, material: GRAY_STAINED_GLASS_PANE, displayname: '&7 ', lore: ['&7']}
+items:
+  chicken-egg: {slot: 0, material: EGG, displayname: '&fEgg', price: 35, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
+  cow-egg: {slot: 1, material: COW_SPAWN_EGG, displayname: '&fCow Spawn Egg', price: 500, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
+  pig-egg: {slot: 2, material: PIG_SPAWN_EGG, displayname: '&fPig Spawn Egg', price: 450, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
+  sheep-egg: {slot: 3, material: SHEEP_SPAWN_EGG, displayname: '&fSheep Spawn Egg', price: 550, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%'}
+  zombie-egg: {slot: 4, material: ZOMBIE_SPAWN_EGG, displayname: '&fZombie Spawn Egg', price: 1500, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
+  skeleton-egg: {slot: 5, material: SKELETON_SPAWN_EGG, displayname: '&fSkeleton Spawn Egg', price: 1800, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
+  creeper-egg: {slot: 6, material: CREEPER_SPAWN_EGG, displayname: '&fCreeper Spawn Egg', price: 2000, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%'}
+  spider-egg: {slot: 7, material: SPIDER_SPAWN_EGG, displayname: '&fSpider Spawn Egg', price: 1750, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%'}

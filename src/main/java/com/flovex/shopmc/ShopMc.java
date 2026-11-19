@@ -43,7 +43,8 @@ public final class ShopMc extends JavaPlugin implements Listener, CommandExecuto
             Bukkit.getPluginManager().disablePlugin(this);
             return;
         }
-        shopCommand.setExecutor(this);\n        shopCommand.setTabCompleter(this);
+        shopCommand.setExecutor(this);
+        shopCommand.setTabCompleter(this);
         getLogger().info("ShopMc loaded without license or activation code.");
     }
     private FileConfiguration yaml(String p){return YamlConfiguration.loadConfiguration(new File(getDataFolder(),p));}

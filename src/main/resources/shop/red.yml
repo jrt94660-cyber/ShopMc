@@ -1,0 +1,18 @@
+title: '&8sʜᴏᴘ - ʀᴇᴅsᴛᴏɴᴇ'
+rows: 3
+back-button: {slot: 18, material: RED_STAINED_GLASS_PANE, displayname: '&#e00202ʙᴀᴄᴋ', lore: ['&fClick to return']}
+next: {slot: 26, material: ARROW, displayname: '&#f00f0cɴᴇxᴛ', lore: ['&fClick to go to next page']}
+last: {slot: 18, material: ARROW, displayname: '&#f00f0cʙᴀᴄᴋ', lore: ['&fClick to go to last page']}
+filler: {enabled: false, material: GRAY_STAINED_GLASS_PANE, displayname: '&7 ', lore: ['&7']}
+items:
+  redstone: {slot: 0, material: REDSTONE, displayname: '&fRedstone Dust', price: 35, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
+  repeater: {slot: 1, material: REPEATER, displayname: '&fRepeater', price: 100, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
+  comparator: {slot: 2, material: COMPARATOR, displayname: '&fComparator', price: 150, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
+  piston: {slot: 3, material: PISTON, displayname: '&fPiston', price: 200, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
+  sticky-piston: {slot: 4, material: STICKY_PISTON, displayname: '&fSticky Piston', price: 300, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
+  observer: {slot: 5, material: OBSERVER, displayname: '&fObserver', price: 400, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
+  hopper: {slot: 6, material: HOPPER, displayname: '&fHopper', price: 250, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
+  dispenser: {slot: 7, material: DISPENSER, displayname: '&fDispenser', price: 200, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
+  dropper: {slot: 8, material: DROPPER, displayname: '&fDropper', price: 175, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
+  target: {slot: 9, material: TARGET, displayname: '&fTarget Block', price: 300, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
+  lever: {slot: 10, material: LEVER, displayname: '&fLever', price: 20, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%'}

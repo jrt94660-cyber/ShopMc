@@ -9,7 +9,7 @@ softdepend: [Vault, PlayerPoints, CoinsEngine]
 commands:
   shop:
     description: Open shop
-    usage: /shop [reload]
+    usage: /shop [category|reload]
     aliases: [smp-shop]
 permissions:
   smpshop.use:

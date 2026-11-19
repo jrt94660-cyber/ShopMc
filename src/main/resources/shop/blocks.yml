@@ -1,0 +1,28 @@
+title: '&8sʜᴏᴘ - ʙʟᴏᴄᴋs'
+rows: 3
+back-button: {slot: 18, material: RED_STAINED_GLASS_PANE, displayname: '&#e00202ʙᴀᴄᴋ', lore: ['&fClick to return']}
+next: {slot: 26, material: ARROW, displayname: '&#f00f0cɴᴇxᴛ', lore: ['&fClick to go to next page']}
+last: {slot: 18, material: ARROW, displayname: '&#f00f0cʙᴀᴄᴋ', lore: ['&fClick to go to last page']}
+filler: {enabled: false, material: GRAY_STAINED_GLASS_PANE, displayname: '&7 ', lore: ['&7']}
+items:
+  stone: {slot: 0, material: STONE, displayname: '&fStone', price: 8, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
+  cobblestone: {slot: 1, material: COBBLESTONE, displayname: '&fCobblestone', price: 5, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
+  dirt: {slot: 2, material: DIRT, displayname: '&fDirt', price: 5, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
+  grass: {slot: 3, material: GRASS_BLOCK, displayname: '&fGrass Block', price: 20, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
+  sand: {slot: 4, material: SAND, displayname: '&fSand', price: 12, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
+  gravel: {slot: 5, material: GRAVEL, displayname: '&fGravel', price: 10, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
+  glass: {slot: 6, material: GLASS, displayname: '&fGlass', price: 30, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
+  oak-wood: {slot: 7, material: OAK_LOG, displayname: '&fOak Log', price: 25, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
+  spruce-wood: {slot: 8, material: SPRUCE_LOG, displayname: '&fSpruce Log', price: 25, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
+  stone-bricks: {slot: 9, material: STONE_BRICKS, displayname: '&fStone Bricks', price: 15, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
+  bricks: {slot: 10, material: BRICKS, displayname: '&fBricks', price: 100, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
+  sandstone: {slot: 11, material: SANDSTONE, displayname: '&fSandstone', price: 15, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
+  quartz: {slot: 12, material: QUARTZ_BLOCK, displayname: '&fQuartz Block', price: 75, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
+  obsidian: {slot: 13, material: OBSIDIAN, displayname: '&fObsidian', price: 100, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
+  clay: {slot: 14, material: CLAY, displayname: '&fClay', price: 20, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
+  terracotta: {slot: 15, material: TERRACOTTA, displayname: '&fTerracotta', price: 35, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
+  white-wool: {slot: 16, material: WHITE_WOOL, displayname: '&fWhite Wool', price: 40, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
+  red-wool: {slot: 17, material: RED_WOOL, displayname: '&fRed Wool', price: 40, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
+  smooth-stone: {slot: 18, material: SMOOTH_STONE, displayname: '&fSmooth Stone', price: 12, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
+  polished-andesite: {slot: 19, material: POLISHED_ANDESITE, displayname: '&fPolished Andesite', price: 18, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%'}
+  polished-diorite: {slot: 20, material: POLISHED_DIORITE, displayname: '&fPolished Diorite', price: 18, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}

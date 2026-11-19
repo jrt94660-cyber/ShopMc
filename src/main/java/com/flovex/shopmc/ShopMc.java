@@ -18,7 +18,7 @@ import java.text.DecimalFormat;
 import java.util.*;
 import java.util.regex.*;
 
-public final class ShopMc extends JavaPlugin implements Listener, CommandExecutor {
+public final class ShopMc extends JavaPlugin implements Listener, CommandExecutor, TabCompleter {
     private FileConfiguration menu;
     private final Map<String,FileConfiguration> cats=new LinkedHashMap<>();
     private final Map<UUID,Buy> buys=new HashMap<>();
@@ -43,7 +43,7 @@ public final class ShopMc extends JavaPlugin implements Listener, CommandExecuto
             Bukkit.getPluginManager().disablePlugin(this);
             return;
         }
-        shopCommand.setExecutor(this);
+        shopCommand.setExecutor(this);\n        shopCommand.setTabCompleter(this);
         getLogger().info("ShopMc loaded without license or activation code.");
     }
     private FileConfiguration yaml(String p){return YamlConfiguration.loadConfiguration(new File(getDataFolder(),p));}
@@ -54,7 +54,7 @@ public final class ShopMc extends JavaPlugin implements Listener, CommandExecuto
         List<String> configured = new ArrayList<>(getConfig().getStringList("categories"));
         for (String entry : categories.getKeys(false)) {
             ConfigurationSection section = categories.getConfigurationSection(entry);
-            if (section == null || !section.getString("command", "").trim().isEmpty()) continue;
+            if (section == null) continue;
             String category = section.getString("action", entry).toLowerCase(Locale.ROOT);
             if (!configured.contains(category)) configured.add(category);
             String resource = "shop/" + category + ".yml";
@@ -79,8 +79,15 @@ public final class ShopMc extends JavaPlugin implements Listener, CommandExecuto
         }
     }
     public boolean onCommand(CommandSender s,Command c,String l,String[] a){
-        if(a.length>0&&a[0].equalsIgnoreCase("reload")){if(!s.hasPermission("smpshop.admin")){msg(s,"no-permission");return true;}reloadConfig();loadMenus();msg(s,"plugin-reloaded");return true;}
-        if(!(s instanceof Player p)){s.sendMessage("Players only.");return true;}if(!p.hasPermission("smpshop.use")){msg(p,"no-permission");return true;}main(p);return true;
+        if(a.length>0&&a[0].equalsIgnoreCase("reload")){if(!s.hasPermission("smpshop.admin")){msg(s,"no-permission");return true;}reloadConfig();ensureCategoryFiles();loadMenus();msg(s,"plugin-reloaded");return true;}
+        if(!(s instanceof Player p)){s.sendMessage("Players only.");return true;}if(!p.hasPermission("smpshop.use")){msg(p,"no-permission");return true;}
+        if(a.length==0){main(p);return true;}
+        String key=a[0].toLowerCase(Locale.ROOT);if(cats.containsKey(key)){category(p,key,0);return true;}
+        s.sendMessage(col(getConfig().getString("messages.unknown-category","&cUnknown shop category. &7Available: &f"+String.join(", ",cats.keySet()))));return true;
+    }
+    @Override public List<String> onTabComplete(CommandSender sender,Command command,String alias,String[] args){
+        if(args.length==1){String prefix=args[0].toLowerCase(Locale.ROOT);List<String> suggestions=new ArrayList<>();if("reload".startsWith(prefix)&&sender.hasPermission("smpshop.admin"))suggestions.add("reload");for(String key:cats.keySet())if(key.startsWith(prefix))suggestions.add(key);return suggestions;}
+        return Collections.emptyList();
     }
     private void main(Player p){int rows=limit(menu.getInt("rows",3),1,6);Inventory i=Bukkit.createInventory(null,rows*9,col(menu.getString("title","&8Shop")));ConfigurationSection cs=menu.getConfigurationSection("categories");if(cs!=null)for(String k:cs.getKeys(false)){ConfigurationSection c=cs.getConfigurationSection(k);int slot=c.getInt("slot",0);if(slot>=0&&slot<i.getSize())i.setItem(slot,item(c.getString("material","CHEST"),c.getString("displayname",k),c.getStringList("lore"),c.getBoolean("glow",false)));}fill(i,menu.getConfigurationSection("filler"));open(p,i,"MAIN");}
     private void category(Player p,String key,int page){FileConfiguration c=cats.get(key);if(c==null){p.sendMessage(col(getConfig().getString("messages.unknown-category","&cMissing shop category.")));return;}Inventory i=Bukkit.createInventory(null,limit(c.getInt("rows",3),1,6)*9,col(c.getString("title","&8Shop")));ConfigurationSection items=c.getConfigurationSection("items");List<String> keys=items==null?new ArrayList<>():new ArrayList<>(items.getKeys(false));keys.sort(Comparator.comparingInt(k->items.getInt(k+".slot",999)));int start=page*18,end=Math.min(keys.size(),start+18);for(int n=start;n<end;n++){ConfigurationSection it=items.getConfigurationSection(keys.get(n));int slot=page==0?it.getInt("slot",n%18):n-start;if(slot>=0&&slot<18)i.setItem(slot,shopItem(it));}
@@ -119,7 +126,7 @@ public final class ShopMc extends JavaPlugin implements Listener, CommandExecuto
         else if(view.startsWith("CAT:")){String[] a=view.split(":");String key=a[1];int page=Integer.parseInt(a[2]);FileConfiguration c=cats.get(key);if(slot==c.getInt("back-button.slot",18)&&page==0){sound(p,"back");main(p);return;}if(slot==c.getInt("last.slot",18)&&page>0){sound(p,"back");category(p,key,page-1);return;}if(slot==c.getInt("next.slot",26)){sound(p,"next");category(p,key,page+1);return;}ConfigurationSection its=c.getConfigurationSection("items");if(its==null)return;List<String> keys=new ArrayList<>(its.getKeys(false));keys.sort(Comparator.comparingInt(k->its.getInt(k+".slot",999)));int start=page*18;for(int n=start;n<Math.min(keys.size(),start+18);n++){ConfigurationSection it=its.getConfigurationSection(keys.get(n));int itemSlot=page==0?it.getInt("slot",n%18):n-start;if(itemSlot==slot){prepare(p,it,key,page);return;}}}
         else if(view.startsWith("CONF:")){Buy b=buys.get(p.getUniqueId());if(b==null)return;if(slot==21){buys.remove(p.getUniqueId());sound(p,"decline");category(p,b.category,b.page);return;}if(slot==23){sound(p,"buy");purchase(p,b);return;}if(slot==9)b.qty=Math.max(1,b.qty-64);else if(slot==10)b.qty=Math.max(1,b.qty-10);else if(slot==11)b.qty=Math.max(1,b.qty-1);else if(slot==15)b.qty=Math.min(b.max,b.qty+1);else if(slot==16)b.qty=Math.min(b.max,b.qty+10);else if(slot==17)b.qty=b.max;sound(p,"click");confirm(p,b);}
     }
-    private void prepare(Player p,ConfigurationSection c,String cat,int pg){String provider="vault";ConfigurationSection ep=menu.getConfigurationSection("categories."+cat+".money-provider");String currency=getConfig().getString("economy.default-currency","shards");if(ep!=null){currency=ep.getString("coinsengine-currency",currency);if(ep.getBoolean("playerpoints"))provider="coinsengine";else if(ep.getBoolean("coinsengine"))provider="coinsengine";}if(provider.equals("vault")&&!vaultAvailable()){if(pointsAvailable())provider="coinsengine";else if(getConfig().getString("economy.coinsengine-withdraw-command","").isBlank()){msg(p,"no-economy");return;}}
+    private void prepare(Player p,ConfigurationSection c,String cat,int pg){String provider="vault";ConfigurationSection ep=menu.getConfigurationSection("categories."+cat+".money-provider");String currency=getConfig().getString("economy.default-currency","shards");if(ep!=null){currency=ep.getString("coinsengine-currency",currency);if(ep.getBoolean("playerpoints"))provider="playerpoints";else if(ep.getBoolean("coinsengine"))provider="coinsengine";}if(provider.equals("vault")&&!vaultAvailable()){if(pointsAvailable())provider="coinsengine";else if(getConfig().getString("economy.coinsengine-withdraw-command","").isBlank()){msg(p,"no-economy");return;}}
         Material m=mat(c.getString("material","STONE"));int base=Math.max(1,c.getInt("amount",1));Buy b=new Buy(cat,provider,currency,shopItem(c),c.getDouble("price",0),c.getString("command",""),base,Math.min(64,Math.max(1,m.getMaxStackSize())),pg);b.qty=1;buys.put(p.getUniqueId(),b);confirm(p,b);}
     private void confirm(Player p,Buy b){String file="economy-confirm-gui/"+(b.provider.equals("playerpoints")?"playerpoints":b.provider.equals("coinsengine")?"coinsengine":"vault")+"-confirm.yml";FileConfiguration c=yaml(file);Inventory i=Bukkit.createInventory(null,limit(c.getInt("rows",3),1,6)*9,col(c.getString("title","&8Confirm Purchase")));ItemStack preview=b.icon.clone();ItemMeta pm=preview.getItemMeta();List<String> lore=new ArrayList<>(pm.hasLore()?pm.getLore():List.of());for(String s:c.getStringList("item-purchase.lore"))lore.add(col(s.replace("%amount%",String.valueOf(b.qty*b.base)).replace("%price%",money(b.unit*b.qty)).replace("%item%",ChatColor.stripColor(pm.getDisplayName()))));pm.setLore(lore);preview.setItemMeta(pm);i.setItem(c.getInt("item-purchase.slot",13),preview);
         i.setItem(c.getInt("confirm-purchase.slot",23),item(c.getString("confirm-purchase.material","LIME_STAINED_GLASS_PANE"),c.getString("confirm-purchase.displayname","&aConfirm"),c.getStringList("confirm-purchase.lore"),false));i.setItem(c.getInt("decline-purchase.slot",21),item(c.getString("decline-purchase.material","RED_STAINED_GLASS_PANE"),c.getString("decline-purchase.displayname","&cBack"),c.getStringList("decline-purchase.lore"),false));

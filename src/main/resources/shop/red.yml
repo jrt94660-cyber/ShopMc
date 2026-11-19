@@ -15,4 +15,4 @@ items:
   dispenser: {slot: 7, material: DISPENSER, displayname: '&fDispenser', price: 200, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
   dropper: {slot: 8, material: DROPPER, displayname: '&fDropper', price: 175, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
   target: {slot: 9, material: TARGET, displayname: '&fTarget Block', price: 300, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
-  lever: {slot: 10, material: LEVER, displayname: '&fLever', price: 20, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%'}
+  lever: {slot: 10, material: LEVER, displayname: '&fLever', price: 20, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}

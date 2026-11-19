@@ -2,7 +2,7 @@ title: '&7▷ Shop Dashboard'
 rows: 3
 categories:
   food:
-    material: APPLE
+    material: MOSS_BLOCK
     displayname: '&#C6F486&lFOOD SHOP'
     slot: 4
     premium: false
@@ -41,6 +41,7 @@ categories:
       - '&#C6F486| &fblocks and decorative items.'
       - ''
       - '&#EEC619▷ &l&nCLICK&r &#EEC619to browse'
+
   farm:
     material: SUGAR_CANE
     displayname: '&#aeff03&lFARMING SHOP'
@@ -61,6 +62,7 @@ categories:
       - '&#aeff03| &fsupplies, crops, and seeds.'
       - ''
       - '&#EEC619▷ &l&nCLICK&r &#EEC619to browse'
+
   mob:
     material: BONE
     displayname: '&#ff9832&lMOB DROPS'
@@ -81,6 +83,7 @@ categories:
       - '&#ff9832| &fdrops and monster loot.'
       - ''
       - '&#EEC619▷ &l&nCLICK&r &#EEC619to browse'
+
   gear:
     material: TOTEM_OF_UNDYING
     displayname: '&#00ADFC&lGEAR SHOP'
@@ -101,6 +104,7 @@ categories:
       - '&#00ADFC| &farmor, and combat equipment.'
       - ''
       - '&#EEC619▷ &l&nCLICK&r &#EEC619to browse'
+
   red:
     material: REDSTONE
     displayname: '&#FF0000&lREDSTONE SHOP'
@@ -121,6 +125,7 @@ categories:
       - '&#FF0000| &fcomponents and machinery.'
       - ''
       - '&#EEC619▷ &l&nCLICK&r &#EEC619to browse'
+
   premium:
     material: END_CRYSTAL
     displayname: '&#FF00E5&lPREMIUM SHOP'
@@ -141,6 +146,7 @@ categories:
       - '&#FF00E5| &ffor Premium rank players.'
       - ''
       - '&#EEC619▷ &l&nCLICK&r &#EEC619to browse'
+
   shards:
     material: SPAWNER
     displayname: '&#EAFF1D&lSPAWNER SHOP'

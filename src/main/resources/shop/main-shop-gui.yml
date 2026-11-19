@@ -1,0 +1,53 @@
+title: '&8ѕʜᴏᴘ'
+rows: 3
+filler:
+  enabled: false
+  material: GRAY_STAINED_GLASS_PANE
+  displayname: '&7 '
+  lore: ['&7']
+categories:
+  end:
+    displayname: '&#0bf592ᴇɴᴅ'
+    material: END_STONE
+    slot: 11
+    action: end
+    glow: false
+    premium: false
+    money-provider: {vault: true, playerpoints: false, coinsengine: false, coinsengine-currency: ''}
+    lore: ['&fClick to view']
+  nether:
+    displayname: '&#0bf592ɴᴇᴛʜᴇʀ'
+    material: MAGMA_BLOCK
+    slot: 12
+    action: nether
+    glow: false
+    premium: false
+    money-provider: {vault: true, playerpoints: false, coinsengine: false, coinsengine-currency: ''}
+    lore: ['&fClick to view']
+  gear:
+    displayname: '&#0bf592ɢᴇᴀʀ'
+    material: TOTEM_OF_UNDYING
+    slot: 13
+    action: gear
+    glow: false
+    premium: false
+    money-provider: {vault: true, playerpoints: false, coinsengine: false, coinsengine-currency: ''}
+    lore: ['&fClick to view']
+  food:
+    displayname: '&#0bf592ꜰᴏᴏᴅ'
+    material: COOKED_BEEF
+    slot: 14
+    action: food
+    glow: false
+    premium: false
+    money-provider: {vault: true, playerpoints: false, coinsengine: false, coinsengine-currency: ''}
+    lore: ['&fClick to view']
+  shards:
+    displayname: '&#0bf592sʜᴀʀᴅs'
+    material: AMETHYST_SHARD
+    slot: 15
+    action: shards
+    glow: false
+    premium: false
+    money-provider: {vault: true, playerpoints: false, coinsengine: false, coinsengine-currency: ''}
+    lore: ['&fClick to view']

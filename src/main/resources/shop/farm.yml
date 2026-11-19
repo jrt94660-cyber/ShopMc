@@ -1,0 +1,17 @@
+title: '&8sʜᴏᴘ - ꜰᴀʀᴍ'
+rows: 3
+back-button: {slot: 18, material: RED_STAINED_GLASS_PANE, displayname: '&#e00202ʙᴀᴄᴋ', lore: ['&fClick to return']}
+next: {slot: 26, material: ARROW, displayname: '&#f00f0cɴᴇxᴛ', lore: ['&fClick to go to next page']}
+last: {slot: 18, material: ARROW, displayname: '&#f00f0cʙᴀᴄᴋ', lore: ['&fClick to go to last page']}
+filler: {enabled: false, material: GRAY_STAINED_GLASS_PANE, displayname: '&7 ', lore: ['&7']}
+items:
+  wheat: {slot: 0, material: WHEAT, displayname: '&fWheat', price: 20, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
+  seeds: {slot: 1, material: WHEAT_SEEDS, displayname: '&fSeeds', price: 10, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
+  beetroot: {slot: 2, material: BEETROOT, displayname: '&fBeetroot', price: 15, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
+  beetroot-seeds: {slot: 3, material: BEETROOT_SEEDS, displayname: '&fBeetroot Seeds', price: 10, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
+  melon: {slot: 4, material: MELON, displayname: '&fMelon', price: 15, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
+  pumpkin: {slot: 5, material: PUMPKIN, displayname: '&fPumpkin', price: 20, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
+  sugar-cane: {slot: 6, material: SUGAR_CANE, displayname: '&fSugar Cane', price: 25, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
+  cactus: {slot: 7, material: CACTUS, displayname: '&fCactus', price: 30, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
+  bamboo: {slot: 8, material: BAMBOO, displayname: '&fBamboo', price: 20, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}
+  cocoa: {slot: 9, material: COCOA_BEANS, displayname: '&fCocoa Beans', price: 25, amount: 1, command: '', lore: ['&fBuy Price: &#0bf52b$%price%']}

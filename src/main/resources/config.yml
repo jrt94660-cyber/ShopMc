@@ -10,3 +10,4 @@ messages:
   inventory-full: '&cYour inventory is full.'
   purchase: '&aBought &f%amount%x %item% &afor &f%price%&a.'
   reload: '&aShopMc reloaded.'
+  unknown-category: '&cUnknown shop category. &7Available: &f%categories%'

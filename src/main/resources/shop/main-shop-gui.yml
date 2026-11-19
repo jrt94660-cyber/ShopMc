@@ -1,12 +1,163 @@
-title: '&8ѕʜᴏᴘ'
+title: '&7▷ Shop Dashboard'
 rows: 3
-filler: {enabled: false, material: GRAY_STAINED_GLASS_PANE, displayname: '&7 ', lore: ['&7']}
 categories:
-  food: {displayname: '&#0bf592ꜰᴏᴏᴅ', material: COOKED_BEEF, slot: 10, action: food, glow: false, premium: false, money-provider: {vault: true, playerpoints: false, coinsengine: false, coinsengine-currency: ''}, lore: ['&fClick to view']}
-  blocks: {displayname: '&#0bf592ʙʟᴏᴄᴋs', material: BRICKS, slot: 11, action: blocks, glow: false, premium: false, money-provider: {vault: true, playerpoints: false, coinsengine: false, coinsengine-currency: ''}, lore: ['&fClick to view']}
-  farm: {displayname: '&#0bf592ꜰᴀʀᴍ', material: WHEAT, slot: 12, action: farm, glow: false, premium: false, money-provider: {vault: true, playerpoints: false, coinsengine: false, coinsengine-currency: ''}, lore: ['&fClick to view']}
-  mob: {displayname: '&#0bf592ᴍᴏʙ', material: SPAWNER, slot: 13, action: mob, glow: false, premium: false, money-provider: {vault: true, playerpoints: false, coinsengine: false, coinsengine-currency: ''}, lore: ['&fClick to view']}
-  gear: {displayname: '&#0bf592ɢᴇᴀʀ', material: TOTEM_OF_UNDYING, slot: 14, action: gear, glow: false, premium: false, money-provider: {vault: true, playerpoints: false, coinsengine: false, coinsengine-currency: ''}, lore: ['&fClick to view']}
-  red: {displayname: '&#0bf592ʀᴇᴅsᴛᴏɴᴇ', material: REDSTONE, slot: 15, action: red, glow: false, premium: false, money-provider: {vault: true, playerpoints: false, coinsengine: false, coinsengine-currency: ''}, lore: ['&fClick to view']}
-  premium: {displayname: '&#0bf592ᴘʀᴇᴍɪᴜᴍ', material: DIAMOND, slot: 16, action: premium, glow: false, premium: false, money-provider: {vault: true, playerpoints: false, coinsengine: false, coinsengine-currency: ''}, lore: ['&fClick to view']}
-  shards: {displayname: '&#a303f9sʜᴀʀᴅs', material: AMETHYST_SHARD, slot: 22, action: shards, glow: false, premium: false, money-provider: {vault: false, playerpoints: false, coinsengine: true, coinsengine-currency: shards}, lore: ['&fClick to view']}
+  food:
+    material: APPLE
+    displayname: '&#C6F486&lFOOD SHOP'
+    slot: 4
+    premium: false
+    glow: false
+    action: food
+    money-provider:
+      vault: true
+      playerpoints: false
+      coinsengine: false
+      coinsengine-currency: ""
+    lore:
+      - '&7[sʜᴏᴘ&7]'
+      - ''
+      - '&#C6F486Information:'
+      - '&#C6F486| &fBrowse and purchase building'
+      - '&#C6F486| &fblocks and decorative items.'
+      - ''
+      - '&#EEC619▷ &l&nCLICK&r &#EEC619to browse'
+  blocks:
+    material: MOSS_BLOCK
+    displayname: '&#C6F486&lBLOCK SHOP'
+    slot: 10
+    premium: false
+    glow: false
+    action: blocks
+    money-provider:
+      vault: true
+      playerpoints: false
+      coinsengine: false
+      coinsengine-currency: ""
+    lore:
+      - '&7[sʜᴏᴘ&7]'
+      - ''
+      - '&#C6F486Information:'
+      - '&#C6F486| &fBrowse and purchase building'
+      - '&#C6F486| &fblocks and decorative items.'
+      - ''
+      - '&#EEC619▷ &l&nCLICK&r &#EEC619to browse'
+  farm:
+    material: SUGAR_CANE
+    displayname: '&#aeff03&lFARMING SHOP'
+    slot: 11
+    premium: false
+    glow: false
+    action: farm
+    money-provider:
+      vault: true
+      playerpoints: false
+      coinsengine: false
+      coinsengine-currency: ""
+    lore:
+      - '&7[sʜᴏᴘ&7]'
+      - ''
+      - '&#aeff03Information:'
+      - '&#aeff03| &fBrowse and purchase farming'
+      - '&#aeff03| &fsupplies, crops, and seeds.'
+      - ''
+      - '&#EEC619▷ &l&nCLICK&r &#EEC619to browse'
+  mob:
+    material: BONE
+    displayname: '&#ff9832&lMOB DROPS'
+    slot: 12
+    premium: false
+    glow: false
+    action: mob
+    money-provider:
+      vault: true
+      playerpoints: false
+      coinsengine: false
+      coinsengine-currency: ""
+    lore:
+      - '&7[sʜᴏᴘ&7]'
+      - ''
+      - '&#ff9832Information:'
+      - '&#ff9832| &fBrowse and purchase mob'
+      - '&#ff9832| &fdrops and monster loot.'
+      - ''
+      - '&#EEC619▷ &l&nCLICK&r &#EEC619to browse'
+  gear:
+    material: TOTEM_OF_UNDYING
+    displayname: '&#00ADFC&lGEAR SHOP'
+    slot: 13
+    premium: false
+    glow: false
+    action: gear
+    money-provider:
+      vault: true
+      playerpoints: false
+      coinsengine: false
+      coinsengine-currency: ""
+    lore:
+      - '&7[sʜᴏᴘ&7]'
+      - ''
+      - '&#00ADFCInformation:'
+      - '&#00ADFC| &fBrowse and purchase weapons,'
+      - '&#00ADFC| &farmor, and combat equipment.'
+      - ''
+      - '&#EEC619▷ &l&nCLICK&r &#EEC619to browse'
+  red:
+    material: REDSTONE
+    displayname: '&#FF0000&lREDSTONE SHOP'
+    slot: 14
+    premium: false
+    glow: false
+    action: red
+    money-provider:
+      vault: true
+      playerpoints: false
+      coinsengine: false
+      coinsengine-currency: ""
+    lore:
+      - '&7[sʜᴏᴘ&7]'
+      - ''
+      - '&#FF0000Information:'
+      - '&#FF0000| &fBrowse and purchase redstone'
+      - '&#FF0000| &fcomponents and machinery.'
+      - ''
+      - '&#EEC619▷ &l&nCLICK&r &#EEC619to browse'
+  premium:
+    material: END_CRYSTAL
+    displayname: '&#FF00E5&lPREMIUM SHOP'
+    slot: 15
+    premium: true
+    glow: false
+    action: premium
+    money-provider:
+      vault: true
+      playerpoints: false
+      coinsengine: false
+      coinsengine-currency: ""
+    lore:
+      - '&7[sʜᴏᴘ&7]'
+      - ''
+      - '&#FF00E5Information:'
+      - '&#FF00E5| &fExclusive high-tier goods'
+      - '&#FF00E5| &ffor Premium rank players.'
+      - ''
+      - '&#EEC619▷ &l&nCLICK&r &#EEC619to browse'
+  shards:
+    material: SPAWNER
+    displayname: '&#EAFF1D&lSPAWNER SHOP'
+    slot: 16
+    premium: false
+    glow: false
+    action: shards
+    money-provider:
+      vault: false
+      playerpoints: false
+      coinsengine: true
+      coinsengine-currency: "shards"
+    lore:
+      - '&7[sʜᴏᴘ&7]'
+      - ''
+      - '&#EAFF1DInformation:'
+      - '&#EAFF1D| &fPurchase mob spawners using'
+      - '&#EAFF1D| &fyour collected Shards.'
+      - ''
+      - '&#EEC619▷ &l&nCLICK&r &#EEC619to browse'
